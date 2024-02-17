@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.H Paribahan</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-Raleway">
+    <!--Nav bar section  -->
+    <section class="">
+        <div class="container">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul> 
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-[#1DD1001A] text-green-600 font-Raleway text-xl border-green-500	">Bus <img src="./images/bus-icon.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- banner section -->
+    <section>
+        <div class="container">
+            <div class="hero h-[600px]" style="background-image: url(./images/banner.png);">
+                <div class="hero-overlay bg-opacity-10"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="">
+                    <h1 class="mb-5 text-6xl font-Raleway font-bold">End-to-End Travel with</h1><span class=" text-6xl font-Raleway font-bold text-[#1DD100]">P Paribahan</span>
+                    <p class="mb-5 mt-5 font-Inter font-normal text-xl w-[950px] ">P Paribahan is apparently a family owned transport company specializing in transportation of passenger bus services since 1970.The company at present operates more then 60 (Sixty) buses on schedule routes employing over 200 trained staff and safely transporting over a million passengers a year.</p>
+                    <button class="btn bg-[#1DD100] text-black border-none">Buy Tickets</button>
+                  </div>
+                </div>
+              </div>
+              <div class="font-Inter grid grid-row-1 lg:grid-cols-3 gap-6 font-Inter  mr-[235px] ml-[235px] mt-[-50px]">
+                <!-- 1st card -->
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="./images/people.png" alt=""/></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">500K+</h2>
+                      <p>Registered users</p>
+                    </div>
+                  </div>
+                <!-- 2nd card -->
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="./images/ticket-cupon.png" alt=""/></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">1.7 lacks</h2>
+                      <p>Tickets sold</p>
+                    </div>
+                  </div>
+                <!-- 3rd card -->
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="./images/stoppage.png" alt=""/></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">80K+</h2>
+                      <p>Rental partners</p>
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </section>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Best offers for you start -->
+        <section class="mt-24">
+            <div class="container">
+                <h1 class="text-center font-Raleway font-bold text-3xl">Best offers for you</h1>
+                <div class="grid grid-rows-1 lg:grid-cols-2">
+                    <div class="">
+                        <div class="bg-yellow-400 flex w-96  ">
+                            <div>
+                                <h1>15% OFF</h1>
+                            <h3>on your next purchase</h3>
+                            <h4>use by January 2024</h4>
+                            </div>
+                            <hr class="dashed border-solid border-4 color-[#bbb]"> 
+                            <div class="card-body">
+                              <h2 class="card-title">
+                                NEW15
+                                
+                              </h2>
+                              <p>Coupon Code</p>
+                              
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn text-[#1DD100] btn-xs sm:btn-sm md:btn-md lg:btn-lg">See All Offers</button>
+                    </div>
+            </div>
+        </section>
+        <!-- Best offers for you end -->
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+
+    </footer>
+
+
+</body>
+
+</html>
