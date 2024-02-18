@@ -1,0 +1,42 @@
+const allBtn = document.getElementsByClassName("btn");
+let count = 0 ;
+for ( const btn of allBtn){
+    btn.addEventListener("click", function(e){
+        count = count +1 ;
+        document.getElementById('buy-seat').innerText=count;
+    
+        const ticketName = e.target.parentNode.childNodes[1].innerText;
+
+        const selectTicket = document.getElementById('select-ticket-container');
+        const li = document.createElement('li');
+
+        const p = document.createElement('p');
+        p.innerText(ticketName);
+        const p2 = document.createElement('p2');
+        p2.innerText(selectTicket);
+
+        li.appendChild(p);
+        li.appendChild(p2);
+        selectTicket.appendChild(li);
+        
+    });
+}
+
+
+
+
+function setInnerText(id, value){
+    document.getElementById(id).innerText = value;
+}
+
+
+const seatBtn = document.getElementsByClassName("btn");
+let ticket = 40 ;
+for ( const btn of seatBtn){
+    btn.addEventListener("click", function(e){
+        avaibleTicket = ticket -1;
+        return avaibleTicket;
+        document.getElementById('total-seat').innerText = avaibleTicket;
+        
+    })
+}
