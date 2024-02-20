@@ -7,7 +7,7 @@ for ( const btn of allBtn){
         avaibleSeat = totalSeat -1 ;
         
         const seatNumber = e.target.parentNode.childNodes[0].innerText;
-        const seatClass = e.target.parentNode.childNodes.childNodes[2].innerText;
+        
         console.log();
 
         // avaibleSeat = totalSeat -1;
