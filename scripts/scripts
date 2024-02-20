@@ -1,24 +1,37 @@
 const allBtn = document.getElementsByClassName("btn");
 let count = 0 ;
+let totalSeat = 40;
 for ( const btn of allBtn){
-    btn.addEventListener("click", function(e){
+        btn.addEventListener("click", function(e){
         count = count +1 ;
-        document.getElementById('buy-seat').innerText=count;
-    
-        const ticketName = e.target.parentNode.childNodes[1].innerText;
-
-        const selectTicket = document.getElementById('select-ticket-container');
-        const li = document.createElement('li');
-
-        const p = document.createElement('p');
-        p.innerText(ticketName);
-        const p2 = document.createElement('p2');
-        p2.innerText(selectTicket);
-
-        li.appendChild(p);
-        li.appendChild(p2);
-        selectTicket.appendChild(li);
+        avaibleSeat = totalSeat -1 ;
         
+        const seatNumber = e.target.parentNode.childNodes[0].innerText;
+        const seatClass = e.target.parentNode.childNodes.childNodes[2].innerText;
+        console.log();
+
+        // avaibleSeat = totalSeat -1;
+        // document.getElementById('total-seat').innerText = avaibleSeat;
+    
+        // const ticketName = e.target.parentNode.childNodes[1].innerText;
+
+        // setInnerText = selectedTicket;
+        // const selectedTicket = document.getElementsByClassName('select-ticket-container');
+        // const li = document.createElement('li');
+
+        // const p = document.createElement('p');
+        // p.innerText('');
+        // const p2 = document.createElement('p2');
+        // document.p2.innerText('ticket-price');
+
+        // li.appendChild(p);
+        // li.appendChild(p2);
+        // selectedTicket.appendChild(li);
+ 
+        setInnerText('buy-seat', count);
+        setInnerText('total-seat', avaibleSeat);
+        setInnerText('.btn', )
+
     });
 }
 
@@ -29,14 +42,3 @@ function setInnerText(id, value){
     document.getElementById(id).innerText = value;
 }
 
-
-const seatBtn = document.getElementsByClassName("btn");
-let ticket = 40 ;
-for ( const btn of seatBtn){
-    btn.addEventListener("click", function(e){
-        avaibleTicket = ticket -1;
-        return avaibleTicket;
-        document.getElementById('total-seat').innerText = avaibleTicket;
-        
-    })
-}

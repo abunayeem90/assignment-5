@@ -164,7 +164,7 @@
                                     <div><img class="mt-4" src="./images/bus-logo.png" alt=""> </div>
                                     <div>
                                         <h1 class="font-Raleway font-bold text-4xl">Greenline Paribahan</h1>
-                                        <h4 class="font-Inter text-xl text-[#03071299]">Coach-009-WEB ! AC_Business</h4>
+                                        <h4 class="font-Inter text-xl text-[#03071299]">Coach-009-WEB ! <span class="seat-class" id="seat-class">AC_Business</span></h4>
                                     </div>
                                 </div>
                                 <div>
@@ -206,7 +206,7 @@
                                   <img src="./images/fare.png" alt="Shoes" class="rounded-xl" />
                                 </figure>
                                 <div class="card-body items-center text-center">
-                                  <h1 class="card-title">550 Taka</h1>
+                                  <h1 class="card-title"><span id="ticket-price" class="ticket-price">550</span> Taka</h1>
                                   <h4>Per Seat</h4>
                                 </div>
                               </div>
@@ -242,61 +242,6 @@
                               </div>
 
                               <!-- bus seat -->
-                              <!-- <div id="seat" class="grid grid-row-3 lg:grid-cols-5  mt-6 gap-4" >
-                                
-                                   A
-                                <button id="btn" class="btn">A1</button>
-                                <button id="btn" class="btn">A2</button>
-                                <button id="btn" class="btn">A3</button>
-                                <button id="btn" class="btn">A4</button>
-                                    B
-                                <button id="btn" class="btn">B1</button>
-                                <button id="btn" class="btn">B2</button>
-                                <button id="btn" class="btn">B3</button>
-                                <button id="btn" class="btn">B4</button>
-                                   C
-                                <button id="btn" class="btn">C1</button>
-                                <button id="btn" class="btn">C2</button>
-                                <button id="btn" class="btn">C3</button>
-                                <button id="btn" class="btn">C4</button>
-                                    D
-                                <button id="btn" class="btn">D1</button>
-                                <button id="btn" class="btn">D2</button>
-                                <button id="btn" class="btn">D3</button>
-                                <button id="btn" class="btn">D4</button>
-                                    E
-                                <button id="btn" class="btn">E1</button>
-                                <button id="btn" class="btn">E2</button>
-                                <button id="btn" class="btn">E3</button>
-                                <button id="btn" class="btn">E4</button>
-                                   F
-                                <button id="btn" class="btn">F1</button>
-                                <button id="btn" class="btn">F2</button>
-                                <button id="btn" class="btn">F3</button>
-                                <button id="btn" class="btn">F4</button>
-                                    G
-                                <button id="btn" class="btn">G1</button>
-                                <button id="btn" class="btn">G2</button>
-                                <button id="btn" class="btn">G3</button>
-                                <button id="btn" class="btn">G4</button>
-                                   H
-                                <button id="btn" class="btn">H1</button>
-                                <button id="btn" class="btn">H2</button>
-                                <button id="btn" class="btn">H3</button>
-                                <button id="btn" class="btn">H4</button>
-                                   I
-                                <button id="btn" class="btn">I1</button>
-                                <button id="btn" class="btn">I2</button>
-                                <button id="btn" class="btn">I3</button>
-                                <button id="btn" class="btn">I4</button>
-                                    J
-                                <button id="btn" class="btn">J1</button>
-                                <button id="btn" class="btn">J2</button>
-                                <button id="btn" class="btn">J3</button>
-                                <button id="btn" class="btn">J4</button>
-                            
-
-                              </div> -->
 
                               <div class="grid grid-cols-10 gap-28 mt-6">
                                 <div class="grid-cols-1 gap-y-16">
@@ -313,55 +258,55 @@
 
                                 </div>
                                 <div class="grid-rows-1 ">
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">A1</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">B1</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">C1</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">D1</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">E1</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">F1</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">G1</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">H1</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">I1</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">J1</button>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">A1</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">B1</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">C1</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">D1</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">E1</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">F1</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">G1</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">H1</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">I1</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">J1</button></div>
 
                                 </div>
                                 <div class="grid-rows-1 ">
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">A2</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">B2</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">C2</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">D2</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">E2</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">F2</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">G2</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">H2</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">I2</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">J2</button>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">A2</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">B2</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">C2</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">D2</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">E2</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">F2</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">G2</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">H2</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">I2</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">J2</button></div>
 
                                 </div>
                                 <div class="grid-rows-1 ml-28">
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">A3</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">B3</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">C3</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">D3</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">E3</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">F3</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">G3</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">H3</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">I3</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">J3</button>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">A3</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">B3</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">C3</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">D3</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">E3</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">F3</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">G3</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">H3</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">I3</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">J3</button></div>
 
                                 </div>
                                 <div class="grid-rows-1 ml-28">
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">A4</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">B4</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">C4</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">D4</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">E4</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">F4</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">G4</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">H4</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">I4</button>
-                                    <button id="btn" class="btn p-6 mb-3 hover:bg-green-500">J4</button>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">A4</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">B4</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">C4</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">D4</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">E4</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">F4</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">G4</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">H4</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">I4</button></div>
+                                    <div><button class="btn p-6 mb-3 hover:bg-green-500">J4</button></div>
 
                                 </div>
 
@@ -381,12 +326,14 @@
     
                                 <div class="bg-[#F7F8F8]">
                                     <div class="flex gap-36 p-8 ">
-                                        <h4 class="font-Inter font-medium text-xl ">Seat<sup class="text-green-500" id="buy-seat">0</sup></h4> 
+                                        <h4 class="font-Inter font-medium text-xl ">Seat<sup class="text-green-500 p-2" id="buy-seat">0</sup></h4> 
                                         <h4 class="font-Inter font-medium text-xl">Class</h4>
                                         <h4 class="font-Inter font-medium text-xl">Price</h4>
                                     </div>
                                     <div class="divide-x divide-dashed"></div>
-                                    <div class="flex gap-36 p-4 ml-8 ">
+
+                                    <!-- Seceted Ticket calculate -->
+                                    <div id="select-ticket-container" class="flex gap-36 p-4 ml-8 ">
                                         <ul id="select-ticket-container" class="select-ticket-container">
 
                                         </ul>
@@ -400,6 +347,10 @@
                                 <div class="flex pt-4 pr-8 pl-8 ">
                                     <input type="text" placeholder="Have any copupon?" class="input input-bordered rounded-2xl min-w-full h-16 max-w-4xl" />
                                     <button class="rounded-lg btn-xs bg-[#1DD100] sm:btn-sm  md:btn-md lg:mt-[4px] h-14 ml-[-90px]">Apply</button>
+                                </div>
+                                <div class="flex ml-8 pt-5 text-center justify-between font-Inter font-medium text-xl">
+                                    <h2>Grand Total</h2>
+                                    <h2>BDT <span>1100</span></h2>
                                 </div>
                         </div>
 
