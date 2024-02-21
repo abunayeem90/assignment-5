@@ -1,17 +1,32 @@
 const allBtn = document.getElementsByClassName("btn");
-let count = 0 ;
-let totalSeat = 40;
+
 for ( const btn of allBtn){
         btn.addEventListener("click", function(event){
-        count = count +1 ;
-        avaibleSeat = totalSeat -1 ;
+        
         
         const seatNumber = event.target.parentNode.childNodes[0].innerText;
-        console.log();
+        
+        
+        const fourCardSelect = getConvertedValue("buy-seat");
+        if(fourCardSelect +1 > 4){
+            alert("You can't selected more than 4 number seat");
+            return;
+        }
 
         const selectedContainer = document.getElementById("select-ticket-container");
         const ticketPrice = document.getElementById('ticket-price').innerText;
         
+
+       
+
+
+        const totalSeat = getConvertedValue("total-seat");
+        document.getElementById("total-seat").innerText = totalSeat -1;
+
+        const selectedSeat = getConvertedValue("buy-seat");
+        document.getElementById("buy-seat").innerText = selectedSeat + 1;
+
+
         const div = document.createElement("div");
         div.classList.add("flex");
         div.classList.add("flex-cols-1");
