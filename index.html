@@ -113,7 +113,7 @@
                             </div>
                             <hr class="dashed border-solid border-4 color-[#bbb]"> 
                             <div class="card-body font-Raleway text-center pt-[55px]">
-                              <h2 class="font-bold text-3xl">
+                              <h2 id="copun-first" class="font-bold text-3xl">
                                 NEW15
                               </h2>
                               <p class=" font-medium text-xl text-[#03071266]">Coupon Code</p>
@@ -123,14 +123,14 @@
                         <!-- copun 2 -->
                         <div class="bg-[#F78C9C] min-w-[550px] flex">
                             <div class="card-body font-Inter">
-                                <h1 class="font-bold text-5xl">15% OFF</h1>
+                                <h1 class="font-bold text-5xl">20% OFF</h1>
                             <h3 class="font-semibold text-xl">on your next purchase</h3>
                             <h4 class="font-medium text-[18px] text-[#03071280]">use by January 2024</h4>
                             </div>
                             <hr class="dashed border-solid border-4 color-[#bbb]"> 
                             <div class="card-body font-Raleway text-center pt-[55px]">
-                              <h2 class="font-bold text-3xl">
-                                NEW15
+                              <h2 id="copun-second" class="font-bold text-3xl">
+                                Couple 20
                               </h2>
                               <p class=" font-medium text-xl text-[#03071266]">Coupon Code</p>
                               
@@ -333,24 +333,21 @@
                                     <div class="divide-x divide-dashed"></div>
 
                                     <!-- Seceted Ticket calculate -->
-                                    <div id="select-ticket-container" class="flex gap-36 p-4 ml-8 ">
-                                        <ul id="select-ticket-container" class="select-ticket-container">
-
-                                        </ul>
+                                    <div id="select-ticket-container" class="gap-36 p-2 ml-8 ">
                                     </div>
                                     <div class="flex ml-8 text-center justify-between font-Inter font-medium text-xl">
                                         <h2>Total Price</h2>
-                                        <h2>BDT <span>1100</span></h2>
+                                        <h2>BDT <span id="total-cost">0</span></h2>
                                     </div>
     
                                 </div>
                                 <div class="flex pt-4 pr-8 pl-8 ">
-                                    <input type="text" placeholder="Have any copupon?" class="input input-bordered rounded-2xl min-w-full h-16 max-w-4xl" />
-                                    <button class="rounded-lg btn-xs bg-[#1DD100] sm:btn-sm  md:btn-md lg:mt-[4px] h-14 ml-[-90px]">Apply</button>
+                                    <input id="coupon-code" type="text" placeholder="Have any copupon?" class="input input-bordered rounded-2xl min-w-full h-16 max-w-4xl" />
+                                    <button  onclick="updateGrandTotal('apply-btn')" class="rounded-lg btn-xs bg-[#1DD100] sm:btn-sm  md:btn-md lg:mt-[4px] h-14 ml-[-90px]">Apply</button>
                                 </div>
                                 <div class="flex ml-8 pt-5 text-center justify-between font-Inter font-medium text-xl">
                                     <h2>Grand Total</h2>
-                                    <h2>BDT <span>1100</span></h2>
+                                    <h2> BDT <span id="grand-total">0</span></h2>
                                 </div>
                         </div>
 

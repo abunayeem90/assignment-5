@@ -2,43 +2,90 @@ const allBtn = document.getElementsByClassName("btn");
 let count = 0 ;
 let totalSeat = 40;
 for ( const btn of allBtn){
-        btn.addEventListener("click", function(e){
+        btn.addEventListener("click", function(event){
         count = count +1 ;
         avaibleSeat = totalSeat -1 ;
         
-        const seatNumber = e.target.parentNode.childNodes[0].innerText;
-        
+        const seatNumber = event.target.parentNode.childNodes[0].innerText;
         console.log();
 
-        // avaibleSeat = totalSeat -1;
-        // document.getElementById('total-seat').innerText = avaibleSeat;
-    
-        // const ticketName = e.target.parentNode.childNodes[1].innerText;
+        const selectedContainer = document.getElementById("select-ticket-container");
+        const ticketPrice = document.getElementById('ticket-price').innerText;
+        
+        const div = document.createElement("div");
+        div.classList.add("flex");
+        div.classList.add("flex-cols-1");
+        div.classList.add("text-center");
+        div.classList.add("justify-between");
+        div.classList.add("gap-32");
 
-        // setInnerText = selectedTicket;
-        // const selectedTicket = document.getElementsByClassName('select-ticket-container');
-        // const li = document.createElement('li');
+        const p1 = document.createElement("p");
+        const p2 = document.createElement("p");
+        const p3 = document.createElement("p");
+        
+        p1.innerText = seatNumber;
+        p2.innerText = 'Economy Class';
+        p3.innerText = ticketPrice;
 
-        // const p = document.createElement('p');
-        // p.innerText('');
-        // const p2 = document.createElement('p2');
-        // document.p2.innerText('ticket-price');
+        div.appendChild(p1);
+        div.appendChild(p2);
+        div.appendChild(p3);
+        selectedContainer.appendChild(div);
 
-        // li.appendChild(p);
-        // li.appendChild(p2);
-        // selectedTicket.appendChild(li);
- 
-        setInnerText('buy-seat', count);
-        setInnerText('total-seat', avaibleSeat);
-        setInnerText('.btn', )
+        updateTotalCost(ticketPrice);
+        updateGrandTotal();
+         
 
     });
 }
 
 
+function updateGrandTotal(status) {
+    const totalCost = getConvertedValue('total-cost'); 
+    if(status == undefined){
+        
+        document.getElementById('grand-total').innerText = totalCost;
+    }
+    else{
+        const cuponCode = document.getElementById('coupon-code').value;
+
+        if(cuponCode == "NEW15"){
+            const firstDiscounted = totalCost * 0.15;
+            document.getElementById('grand-total').innerText = totalCost - firstDiscounted;
+        }
+
+        else if(cuponCode =="Couple 20"){
+            const secondDiscounted = totalCost*0.2;
+            document.getElementById('grand-total').innerText = totalCost - secondDiscounted;
+
+        }
 
 
-function setInnerText(id, value){
-    document.getElementById(id).innerText = value;
+        else{
+            alert("Please Enter a Valid Cupon Code");
+        }
+    }
+
+  
 }
+
+
+
+function updateTotalCost(value) {
+    const totalCost =getConvertedValue('total-cost');
+    const sum = totalCost + parseInt(value);
+    document.getElementById('total-cost').innerText = sum;
+    
+}
+
+
+function getConvertedValue (id){
+    const seatNumber = document.getElementById(id).innerText;
+    const convertSeatToNumber = parseInt(seatNumber);
+    return convertSeatToNumber;
+}
+
+
+
+
 
