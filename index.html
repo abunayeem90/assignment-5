@@ -15,7 +15,7 @@
         rel="stylesheet">
 </head>
 
-<body class="font-Raleway">
+<body id="body" class="font-Raleway">
     <!--Nav bar section  -->
     <section class="">
         <div class="container">
@@ -366,7 +366,9 @@
                                     <input type="text" placeholder="Enter your name" required="Email" class="input input-bordered h-16 mt-4 min-w-full max-w-xs" />
                                 </div>
                                 <div class="mt-8">
-                                    <button class="rounded-lg h-16 w-full bg-green-500 text-white font-Ralway font-extrabold text-xl">Next</button>
+                                    <button class="rounded-lg h-16 w-full bg-green-500 text-white font-Ralway font-extrabold text-xl" onclick="popUp()">Next</button>
+                                
+
                                 </div>
                                 <div class="mt-4 ml-8 mr-8 flex gap-20">
                                     <h4 class="underline"><a href="#">Terms and Conditions</a></h4>
@@ -421,7 +423,7 @@
                 <div>
                     <h3 class="text-white ml-20"> <a href="#">@all rights reserved, P-Ticket services limited.2024</a></h3>
                 </div>
-                <div class="flex flex-col">
+                <div class="relative">
                     <ul class="text-white">
                         <li><a href=""></a>Terms & condition</li>
                         <li><a href=""></a>Return & refund policy</li>
@@ -435,7 +437,7 @@
     </footer>
     
 <script src="./scripts/utilities.js"></script>
-<script src="./scripts/scripts"></script>
+<script src="./scripts/scripts.js"></script>
 </body>
 
 </html>

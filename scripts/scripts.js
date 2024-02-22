@@ -7,16 +7,21 @@ for ( const btn of allBtn){
         const seatNumber = event.target.parentNode.childNodes[0].innerText;
         
         
+
         const fourCardSelect = getConvertedValue("buy-seat");
+        event.target.setAttribute("disabled", false);
+        
+
         if(fourCardSelect +1 > 4){
             alert("You can't selected more than 4 number seat");
             return;
         }
+       
 
         const selectedContainer = document.getElementById("select-ticket-container");
         const ticketPrice = document.getElementById('ticket-price').innerText;
         
-
+        event.target.parentNode.style.backgroundColor ="green";
        
 
 
@@ -84,23 +89,16 @@ function updateGrandTotal(status) {
   
 }
 
-
-
 function updateTotalCost(value) {
-    const totalCost =getConvertedValue('total-cost');
+    const totalCost = getConvertedValue('total-cost');
     const sum = totalCost + parseInt(value);
     document.getElementById('total-cost').innerText = sum;
     
 }
-
 
 function getConvertedValue (id){
     const seatNumber = document.getElementById(id).innerText;
     const convertSeatToNumber = parseInt(seatNumber);
     return convertSeatToNumber;
 }
-
-
-
-
 
