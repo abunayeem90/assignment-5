@@ -3,23 +3,17 @@ const allBtn = document.getElementsByClassName("btn");
 for ( const btn of allBtn){
         btn.addEventListener("click", function(event){
         
-        
         const seatNumber = event.target.parentNode.childNodes[0].innerText;
         
-        
-
         const fourCardSelect = getConvertedValue("buy-seat");
         event.target.setAttribute("disabled", false);
         event.target.style.backgroundColor ="#1DD100";
-
-        
-
+     
         if(fourCardSelect +1 > 4){
             alert("You can't selected more than 4 number seat");
             return;
         }
        
-
         const selectedContainer = document.getElementById("select-ticket-container");
         const ticketPrice = document.getElementById('ticket-price').innerText;
         
@@ -53,7 +47,6 @@ for ( const btn of allBtn){
         updateTotalCost(ticketPrice);
         updateGrandTotal();
          
-
     });
 }
 
@@ -77,7 +70,6 @@ function updateGrandTotal(status) {
             document.getElementById('grand-total').innerText = totalCost - secondDiscounted;
 
         }
-
 
         else{
             alert("Please Enter a Valid Cupon Code");
