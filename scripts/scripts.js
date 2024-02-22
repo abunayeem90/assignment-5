@@ -10,6 +10,8 @@ for ( const btn of allBtn){
 
         const fourCardSelect = getConvertedValue("buy-seat");
         event.target.setAttribute("disabled", false);
+        event.target.style.backgroundColor ="#1DD100";
+
         
 
         if(fourCardSelect +1 > 4){
@@ -21,10 +23,6 @@ for ( const btn of allBtn){
         const selectedContainer = document.getElementById("select-ticket-container");
         const ticketPrice = document.getElementById('ticket-price').innerText;
         
-        event.target.parentNode.style.backgroundColor ="green";
-       
-
-
         const totalSeat = getConvertedValue("total-seat");
         document.getElementById("total-seat").innerText = totalSeat -1;
 
